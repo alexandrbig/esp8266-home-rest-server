@@ -27,9 +27,6 @@
 #define DHTTYPE DHT22   // Указываем, какой тип датчика мы используем
 #define ONE_WIRE_BUS D4  // контакт для передачи данных подключен к D1 на ESP8266 12-E (GPIO5):
 
-//const char* ssid = "ASUS";
-//const char* password = "03061986";
-
 ESP8266WebServer server(80);
 DHT dht(DHTPIN, DHTTYPE);
 // создаем экземпляр класса oneWire; с его помощью
